@@ -41,7 +41,7 @@ jobs:
     steps:
     # ビルド結果をダウンロード
     - name: Download build result
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v3
       with:
         name: build
         path: public/
