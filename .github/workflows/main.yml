@@ -30,7 +30,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: build
-        path: public/
+        path: .svelte-kit/output/
 
   deploy:
     # ジョブは並行で動くので前後関係の指定が必要
@@ -44,7 +44,7 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: build
-        path: public/
+        path: .svelte-kit/output/
     # S3にアップロード
     - name: Publish to AWS S3
       uses: opspresso/action-s3-sync@master
