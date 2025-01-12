@@ -1,1 +1,2 @@
-export const ssr = false;
+// ssr 無効にしなくてもwebglのインポートに成功している...
+// export const ssr = false;
